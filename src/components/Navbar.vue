@@ -34,7 +34,8 @@
               <img src="https://placekitten.com/g/30/30" alt="Kitten" />
             </template>
             <b-dropdown-item href="#">Profile</b-dropdown-item>
-            <b-dropdown-item href="#">Sign Out</b-dropdown-item>
+            <b-dropdown-item href="https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=650058691429-lct2qj6ngnka0r0au26e4st6clmfdkml.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fapi.allen0099.tw%2Flogin%2Fcallback&scope=openid+email+profile" 
+            n:attr="active => $item->isActive()">Login with GOOGLE</b-dropdown-item>
           </b-nav-item-dropdown>
         </b-navbar-nav>
       </b-collapse>
